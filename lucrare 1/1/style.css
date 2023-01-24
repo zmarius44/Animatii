@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #702FA0;
+    animation: change-color 8s 2s ease infinite;
+}
+
+.outer{
+    background-color: white;
+    position: relative;
+    height: 300px;
+    width: 700px;
+    border-radius: 200px;
+    padding: 15px 20px 15px 20px;
+}
+
+.circle{
+    height: 26vh;
+    position: relative;
+    aspect-ratio: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #702FA0;
+    border-radius: 50%;
+    animation: movement 8s 2s ease infinite;
+}
+
+[class*="line"]{
+    width: 15px;
+    margin-top: 15%;
+    height: 70%;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.line1{
+    animation: check1 8s 2s ease infinite;
+}
+
+.line2{
+    transform: rotate(135deg);
+    animation: check2 8s 2s ease infinite;
+}
+
+@keyframes change-color{
+    0% {
+        background-color: #702FA0;
+    }
+
+    10% {
+        background-color: #cad92d;
+    }
+
+    60%{
+        background-color: #cad92d;
+    }
+
+    70%{
+        background-color: #702FA0;
+    }
+}
+
+@keyframes movement {
+    0% {
+        background-color: #702FA0;
+        left: 0;
+    }
+
+    10% {
+        background-color: #cad92d;
+        left: 57%;
+    }
+
+    60%{
+        background-color: #cad92d;
+        left: 57%;
+    }
+
+    70%{
+        background-color: #702FA0;
+        left: 0;
+    }
+}
+
+
+@keyframes check1 {
+    0%{
+        transform: rotate(45deg);
+    }
+
+    10% {
+        transform: rotate(225deg);
+        height: 55%;
+        top: 25px;
+        margin-left: 70px;
+    }
+
+    60%{
+        transform: rotate(225deg);
+        height: 55%;
+        top: 25px;
+        margin-left: 70px;
+    }
+
+    70%{
+        transform: rotate(45deg);
+        top: 0;
+        height: 70%;
+        margin-left: 0;
+    }
+}
+
+@keyframes check2 {
+    0%{
+        transform: rotate(135deg);
+    }
+
+    10% {
+        transform: rotate(-52deg);
+        height: 25%;
+        top: 105px;
+        margin-left: -80px;
+    }
+
+    60%{
+        transform: rotate(-52deg);
+        height: 25%;
+        top: 105px;
+        margin-left: -80px;
+    }
+
+    70%{
+        transform: rotate(135deg);
+        top: 0;
+        height: 70%;
+        margin-left: 0;
+    }
+}
+
+
+
+

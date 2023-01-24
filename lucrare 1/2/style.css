@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #DA3743;
+}
+
+.circle{
+    background-color: white;
+    height: 300px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+.circle-cont{
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    margin-left: -225px;
+    top: 50%;
+    margin-top: -25px;
+}
+
+.small{
+    background-color: white;
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.circle .small{
+    background-color: #DA3743;
+    position: absolute;
+}
+
+.circle-cont:nth-child(9) {
+    animation: rotation1 6s ease-in-out 3.6s infinite forwards;
+}
+
+@keyframes rotation1 {
+ 
+    70%{
+        transform: rotate(0deg);
+    }
+
+    90%{
+     transform: rotate(360deg);
+    }
+ 
+    100%{
+     transform: rotate(360deg);
+    }
+ }
+
+.circle-cont:nth-child(2) {
+    animation: rotation2 6s ease-in-out 3.6s infinite forwards;
+}
+
+@keyframes rotation2 {
+    20%{
+     transform: rotate(45deg);
+    }
+ 
+    70%{
+     transform: rotate(45deg);
+    }
+ 
+    90%{
+     transform: rotate(360deg);
+    }
+ 
+    100%{
+     transform: rotate(360deg);
+    }
+ }
+
+ .circle-cont:nth-child(3) {
+    animation: rotation3 6s ease-in-out 3.5s infinite forwards;
+}
+
+@keyframes rotation3 {
+    20%{
+     transform: rotate(90deg);
+    }
+ 
+    70%{
+     transform: rotate(90deg);
+    }
+ 
+    90%{
+     transform: rotate(360deg);
+    }
+ 
+    100%{
+     transform: rotate(360deg);
+    }
+ }
+
+.circle-cont:nth-child(4) {
+    animation: rotation4 6s ease-in-out 3.4s infinite forwards;
+}
+
+@keyframes rotation4 {
+    20%{
+     transform: rotate(135deg);
+    }
+ 
+    70%{
+     transform: rotate(135deg);
+    }
+ 
+    90%{
+     transform: rotate(360deg);
+    }
+ 
+    100%{
+     transform: rotate(360deg);
+    }
+ }
+
+ .circle-cont:nth-child(5) {
+    animation: rotation5 6s ease-in-out 3.3s infinite forwards;
+}
+
+@keyframes rotation5 {
+    20%{
+     transform: rotate(180deg);
+    }
+ 
+    70%{
+     transform: rotate(180deg);
+    }
+ 
+    90%{
+     transform: rotate(360deg);
+    }
+ 
+    100%{
+     transform: rotate(360deg);
+    }
+ }
+
+ .circle-cont:nth-child(6) {
+    animation: rotation6 6s ease-in-out 3.2s infinite forwards;
+}
+
+@keyframes rotation6 {
+    20%{
+     transform: rotate(225deg);
+    }
+ 
+    70%{
+     transform: rotate(225deg);
+    }
+ 
+    90%{
+     transform: rotate(360deg);
+    }
+ 
+    100%{
+     transform: rotate(360deg);
+    }
+ }
+
+ .circle-cont:nth-child(7) {
+    animation: rotation7 6s ease-in-out 3.1s infinite forwards;
+}
+
+
+@keyframes rotation7 {
+    20%{
+     transform: rotate(270deg);
+    }
+ 
+    70%{
+     transform: rotate(270deg);
+    }
+ 
+    90%{
+     transform: rotate(360deg);
+    }
+ 
+    100%{
+     transform: rotate(360deg);
+    }
+ }
+
+ .circle-cont:nth-child(8) {
+    animation: rotation8 6s ease-in-out 3s infinite forwards;
+}
+
+@keyframes rotation8 {
+   20%{
+    transform: rotate(315deg);
+   }
+
+   70%{
+    transform: rotate(315deg);
+   }
+
+   90%{
+    transform: rotate(360deg);
+   }
+
+   100%{
+    transform: rotate(360deg);
+   }
+}
