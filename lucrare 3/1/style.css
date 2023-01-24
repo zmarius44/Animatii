@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: kredit;
+    color:#8c753b;
+}
+
+@font-face {
+    font-family: kredit;
+    src: url('kredit.back-regular.ttf');
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waves{
+    background-image: url(https://o.remove.bg/downloads/428018fc-a934-464c-865c-68e800d6db89/22-220209_radio-waves-vector-radio-wave-removebg-preview.png);
+    background-size: cover;
+    height: 15px;
+    width: 26%;
+    padding-top: 15px;
+}
+
+.chip{
+    background-image: url(https://o.remove.bg/downloads/89d3fcc7-df92-43ec-8043-6fac915df6f3/image-removebg-preview.png);
+    background-size: cover;
+    height: 15px;
+    width: 26%;
+    padding-top: 15px;
+}
+
+.card{
+    height: 220px;
+    width: 350px;
+    background-color: #fcb531;
+    border-radius: 20px;
+}
+
+.info{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 75%;
+    font-size: 18px;
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    background-color: #1b3545;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+.logo{
+    background-image: url(https://o.remove.bg/downloads/62af8d80-bd52-4535-af82-38ffd5bb267f/image-removebg-preview.png);
+    background-size: cover;
+    height: 40px;
+    width: 40%;
+    padding-top: 10px;
+}
+
+.first{
+    font-size: 24px;
+    margin-left: 12px;
+    letter-spacing: 2px;
+}
+
+.second{
+    font-size: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xd{
+    margin-left: 30px;
+}
+
+.date{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+
+.visa{
+    margin-top: 10px;
+    background-image: url(https://o.remove.bg/downloads/88268418-5dde-4a97-aa88-28d1b0e987b7/212-2128294_visa-logo-png-image-visa-logo-white-png-removebg-preview.png);
+    background-size: cover;
+    height: 15px;
+    width: 26%;
+    padding-top: 15px;
+}
+
+
+.third{
+    display: flex;
+    justify-content: space-between;
+}
