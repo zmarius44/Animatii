@@ -1,9 +1,9 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: kredit;
-    color:#8c753b;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 @font-face {
     font-family: kredit;
@@ -18,30 +18,64 @@ body{
     align-items: center;
 }
 
+.container{
+    background-color: transparent;
+    perspective: 1000px;
+    height: 220px;
+    width: 350px;
+}
+
+.chips{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
 .waves{
-    background-image: url(https://o.remove.bg/downloads/428018fc-a934-464c-865c-68e800d6db89/22-220209_radio-waves-vector-radio-wave-removebg-preview.png);
+    background-image: url(./waves.png);
     background-size: cover;
-    height: 15px;
-    width: 26%;
-    padding-top: 15px;
+    height: 30px;
+    width: 8%;
 }
 
 .chip{
-    background-image: url(https://o.remove.bg/downloads/89d3fcc7-df92-43ec-8043-6fac915df6f3/image-removebg-preview.png);
+    background-image: url(./chip.png);
     background-size: cover;
-    height: 15px;
-    width: 26%;
-    padding-top: 15px;
+    height: 50px;
+    width: 22%;
+    margin-top: -14px;
+    margin-bottom: -5px;
 }
 
-.card{
+.container-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+[class*="card"]{
+    position: absolute;
+    backface-visibility: hidden;
     height: 220px;
     width: 350px;
     background-color: #fcb531;
     border-radius: 20px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.container:hover .container-inner {
+    transform: rotateY(180deg);
 }
 
 .info{
+    font-family: kredit;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
@@ -49,6 +83,7 @@ body{
     justify-content: flex-end;
     height: 75%;
     font-size: 18px;
+    color:#8c753b;
 }
 
 .header{
@@ -60,7 +95,7 @@ body{
 }
 
 .logo{
-    background-image: url(https://o.remove.bg/downloads/62af8d80-bd52-4535-af82-38ffd5bb267f/image-removebg-preview.png);
+    background-image: url(./maib.png);
     background-size: cover;
     height: 40px;
     width: 40%;
@@ -89,18 +124,64 @@ body{
     font-size: 18px;
 }
 
-
 .visa{
     margin-top: 10px;
-    background-image: url(https://o.remove.bg/downloads/88268418-5dde-4a97-aa88-28d1b0e987b7/212-2128294_visa-logo-png-image-visa-logo-white-png-removebg-preview.png);
+    background-image: url(./visa.png);
     background-size: cover;
-    height: 15px;
-    width: 26%;
-    padding-top: 15px;
+    height: 28px;
+    width: 28%;
 }
-
 
 .third{
     display: flex;
     justify-content: space-between;
+}
+
+.blackbar{
+    margin-top: 15px;
+    height: 50px;
+    background-color: black;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.card-back .info{
+    font-family: 'Poppins', sans-serif;
+    color: #1b3545;
+    justify-content: flex-start;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.cont{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cvv{
+    height: 20px;
+    background-color: white;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.cont p{
+    padding-top: 10px;
+}
+
+.info > p{
+    margin-top: 5px;
+}
+
+.contact{
+    margin-top: 20px;
+    position: relative;
+    left: 40%;
 }
