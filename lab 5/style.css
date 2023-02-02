@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#divy{
+    background-image: url(https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6450.png&w=350&h=254);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75px;
+    aspect-ratio: 1;
+    transition: 0.2s all;
+}
+
+.space{
+    border: 2px solid #5D3891;
+    height: 100%;
+    width: 700px;
+}
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    padding: 10px;
+    background-color: #E8E2E2;
+}
+
+.controls{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal{
+    display: flex;
+    justify-content: space-between;
+}
+
+[type*="button"]{
+    border: 0;
+    background-color: #F99417;
+    padding: 5px 10px 5px 10px;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s all;
+    margin: 5px;
+}
+
+[type*="button"]:hover{
+    background-color: #F5F5F5;
+}
